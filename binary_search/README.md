@@ -1,4 +1,4 @@
-##Binary Search
+## Binary Search
 
 **Case:**
 - Suppose you're searching for a person in the phone book, their names starts with K. You could start at the beginning and keep flipping pages until you get to the Ks.
