@@ -46,3 +46,28 @@ suppose you start guessing like this; 1, 2, 3, 4
 
 
   each time you check the middle element:
+
+   - mid = (low - high) / 2
+   - guess = list[mid]
+
+   if the guess is too low, you update low accordingly: 
+   
+   if guess < item: 
+   low = mid + 1
+
+   and if the guess is too hig, you update high. 
+
+   ## Runtime
+
+   - Generally you want to choose the most efficient algorithm whethere yo're trying to optimize for time or space
+
+   - How much time do you save by using binary search well? 
+   - First approach was to check each number , one by one. If a list of 100 numbers it takes upto 100 gueesses. if its a list of 4 billion it takes up to 4 billion guesses. So thhe maximum number of guesses is the same as the size of the list increases. This is called **linear time**
+
+   - Binary Search is different. If the list is 100 times longer, it takes at most 7 guesses. If the list is 4 billion, it takes at most 32 guesses.
+
+| simple search | binary search |
+| ----- | ---- |
+|100 items = 100 gueses | 100 items = 7 guesses |
+| 4000000000 items  = 4000000000 guesses | 4000000000 = 32 gueses |
+| O(n) | O(log n) |
